@@ -1,0 +1,37 @@
+<!-- play.wxml -->
+<image src="{{imgUrl}}" class="background_img"></image>
+<view class="body">
+	<!-- 歌名歌手 -->
+	<view class="sing-brief">
+		<!-- <view class="back_box" bindtap='go_index'> <image src="/images/back.png" class="back"></image></view> -->
+		<view class="sing-name">{{name}}</view>
+		<view class="singer-name">
+			<text class="singer-name-text">{{author}}</text>
+		</view>
+	</view>
+	<!-- 封面 -->
+	<!-- 一开始onload时,showLyric=true, 显示为转动的图标，点击图标，切换为歌词-->
+	<view class="sing-show" bindtap="showLyric">
+		<view class="moveCircle {{isPlay ? 'play' : ''}}" hidden="{{!showLyric}}">
+			<image src="{{imgUrl}}" class="coverImg {{isPlay ? 'play' : ''}}" hidden="{{!showLyric}}" />
+		</view>
+
+		<view hidden="{{showLyric}}" class="songlyric">
+			<text  hidden="{{showLyric}}" class="lyric">{{lyric}}</text>
+		</view>
+	</view>
+	<!-- 暂停播放图标 -->
+	<view class="play_suspend">
+		<view class="icon_playing ">
+			<!-- <image src="/images/lastSong.png" class=" icon_play" bindtap="go_lastSong" /> -->
+		</view>
+		<view class="icon_playing">
+			<image bindtap="handleToggleBGAudio" src="/images/suspend.png" hidden="{{!isPlay}}" class="{{'img_play_suspend'}}" /> <!-- 暂停图标-->
+			<image bindtap="handleToggleBGAudio" src="/images/play.png" hidden="{{isPlay}}" class="{{'img_play_suspend'}}" />
+		</view>
+		<!--播放图标-->
+		<view class="icon_playing ">
+			<!-- <image src="/images/nextSong.png" class=" icon_play" bindtap="go_lastSong" /> -->
+		</view>
+	</view>
+</view>

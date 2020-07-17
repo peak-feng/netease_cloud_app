@@ -1,0 +1,99 @@
+.search-box {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #DC4238;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+
+
+.search {
+  width: 80%;
+  border: 1rpx solid #DE655C;
+  background: #DE655C;
+  border-radius: 20rpx;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.search-input {
+  padding-left: 100rpx;
+  color: #EDA8A3;
+}
+
+.search_img {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 5rpx;
+  left: 30rpx;
+}
+
+.pla_search {
+  text-align: center;
+  color: #EDA8A3;
+}
+
+.search-bnt {
+  width: 100rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  background: #EDA8A3;
+  color: #fff;
+  border-radius: 20rpx;
+}
+
+.pla_search {
+  text-align: center;
+  color: #EDA8A3;
+}
+
+.song_list {
+  width: 100%;
+  height: 100rpx;
+  padding: 10rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #8f8f8f;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.serial {
+  font-size: 30rpx;
+  color: #9A9A9B;
+  width: 80rpx;
+  text-align: center;
+  align-items: center;
+}
+.result {
+  width: 90%;
+}
+
+.song_name {
+  color: #333;
+  font-size: 30rpx;
+}
+
+.artists {
+  color: #0c73c2;
+}
+
+.artists-box {
+  font-size: 25rpx;
+  color: #333;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}

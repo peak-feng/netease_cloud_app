@@ -1,0 +1,52 @@
+<view class="container">
+	<view class="search-box">
+		<view class="search" bindtap="goSearch">
+			<image src="/images/search.png" class="search_img"></image>
+			<input bindinput="inputChange" disabled="true" bindconfirm="search" placeholder="请输入歌手或歌曲名" placeholder-class="pla_search"></input>
+		</view>
+	</view>
+	<view class="wallpaper">
+		<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+			<block wx:for="{{bannerList}}" wx:key="*this">
+				<swiper-item>
+					<image class="banner_img" src="{{item.pic}}" mode="aspectFill"></image>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+	<view class='comment_container_box'>
+		<view class='comment_daily comment_box' bindtap="go_MV">
+			<view class='contaner_images'>
+				<image src='/images/MV.png' class='commentImage'></image>
+			</view>
+			<text class='comment_text'>推荐MV</text>
+		</view>
+		<view class='comment_private_FM comment_box'>
+			<view class='contaner_images' bindtap='go_songer'>
+				<image src='/images/songer.png' class='commentImage'></image>
+			</view>
+			<text class='comment_text'>歌手榜</text>
+		</view>
+		<view class='comment_songList comment_box' bindtap="go_songsheet">
+			<view class='contaner_images'>
+				<image src='/images/songList.png' class='commentImage'></image>
+			</view>
+			<text class='comment_text'>歌单</text>
+		</view>
+		<view class='comment_rank comment_box' bindtap='go_toplist'>
+			<view class='contaner_images'>
+				<image src='/images/rank.png' class='commentImage'></image>
+			</view>
+			<text class='comment_text'>榜单排行</text>
+		</view>
+	</view>
+	<view class="personalized_box">
+		<view>推荐歌单</view>
+		<view class="personalized_menu">
+			<view class="personalized_list" wx:for="{{personalizedList}}" wx:key="item">
+				<image src="{{item.picUrl}}" class="personalized_img"></image>
+				<view class="personalized_title">{{item.name}}</view>
+			</view>
+		</view>
+	</view>
+</view>

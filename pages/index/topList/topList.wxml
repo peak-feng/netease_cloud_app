@@ -1,0 +1,8 @@
+<view class="container">
+	<view class="toplist_menu">
+		<view class="toplist" wx:for="{{topList}}" wx:key="item">
+			<image src="{{item.coverImgUrl}}"></image>
+			<view class="toplist_title">{{item.name}}</view>
+		</view>
+	</view>
+</view>

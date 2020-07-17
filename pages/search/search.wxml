@@ -1,0 +1,22 @@
+<view class="container">
+	<view class="search-box">
+		<view class="search">
+			<image src="/images/search.png" class="search_img"></image>
+			<input bindinput="inputChange" bindconfirm="search" placeholder="请输入歌手或歌曲名" placeholder-class="pla_search"></input>
+		</view>
+		<view class="search-bnt" bindtap="search">搜索</view>
+	</view>
+
+	<view class="result">
+		<view class="song_list" wx:for="{{resultList}}" wx:key="item" bindtap="player" data-id="{{item.id}}" data-name="{{item.name}}" data-author="{{item.artists[0].name}}">
+		<view class="serial ">{{index + 1}}</view>
+			<view>
+				<view class="song_name">{{item.name}}</view>
+				<view class="artists-box">
+					<view class="artists">{{item.artists[0].name}}</view>-
+					<view class="artists_album">{{item.album.name}}</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

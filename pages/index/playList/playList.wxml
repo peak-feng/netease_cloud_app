@@ -1,0 +1,9 @@
+	<view class="personalized_box">
+		<view>歌单</view>
+		<view class="personalized_menu">
+			<view class="personalized_list" wx:for="{{personalizedList}}" wx:key="item">
+				<image src="{{item.picUrl}}" class="personalized_img"></image>
+				<view class="personalized_title">{{item.name}}</view>
+			</view>
+		</view>
+	</view>

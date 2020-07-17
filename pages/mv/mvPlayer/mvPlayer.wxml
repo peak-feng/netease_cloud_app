@@ -1,0 +1,5 @@
+<view class="container">
+	<view class="player">
+		<video id="myVideo" src="{{mvurl}}" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn show-center-play-btn='{{false}}' show-play-btn="{{true}}" controls picture-in-picture-mode="{{['push', 'pop']}}" bindenterpictureinpicture='bindVideoEnterPictureInPicture' enable-play-gesture='true' bindleavepictureinpicture='bindVideoLeavePictureInPicture'></video>
+	</view>
+</view>

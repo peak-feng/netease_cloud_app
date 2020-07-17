@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/player/player",
+    "pages/login/login",
+    "pages/mv/mv",
+    "pages/mv/mvPlayer/mvPlayer",
+    "pages/index/singerList/singerList",
+    "pages/index/recommendMv/recommendMv",
+    "pages/index/playList/playList",
+    "pages/index/topList/topList",
+    "pages/index/songList/songList",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "百度云",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7F99A5",
+    "selectedColor": "#45BEAE",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "乐库",
+        "iconPath": "images/music.png",
+        "selectedIconPath": "images/selected-music.png"
+      },
+      {
+        "pagePath": "pages/mv/mv",
+        "text": "收藏",
+        "iconPath": "images/love.png",
+        "selectedIconPath": "images/selected-love.png"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "text": "我的",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/selected-me.png"
+      }
+    ]
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
